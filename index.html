@@ -283,7 +283,7 @@ var CONFIG={ip:"domination-polarized.tun.ply.gg"};
     .then(function(d){
       clearTimeout(to);
       var pc=document.getElementById("pc");
-      if(!d||!d.online){document.getElementById("entry").dataset.state="offline";pc.className="pc";pc.textContent="Hors ligne";return}
+      if(!d||!d.online){document.getElementById("entry").dataset.state="offline";pc.className="pc";pc.textContent="En Ligne";return}
       var on=d.players&&d.players.online||0,max=d.players&&d.players.max||0;
       pc.textContent=on+"/"+max;
       if(d.version){document.getElementById("version").textContent=d.version;document.getElementById("version2").textContent=d.version}
