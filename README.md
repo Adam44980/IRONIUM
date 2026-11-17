@@ -1,10 +1,13 @@
-# Site Web Ironium (Minecraft 1.20.1)
+# Site Web Ironium (Prêt pour Render & Google Search Console)
 
-## Déploiement sur Render (Recommandé : Static Site)
-1. Décompresse ce dossier et envoie tous les fichiers (`index.html`, `render.yaml`, `Dockerfile`, `README.md`) à la racine de ton dépôt GitHub.
-2. Sur Render, clique sur **New +** > **Static Site**.
-3. Sélectionne ton dépôt GitHub.
-4. Laisse **Build Command** vide et mets `.` dans **Publish Directory**.
-5. Clique sur **Create Static Site**.
+## Fichiers inclus :
+- `index.html` : Page d'accueil complète (avec la balise de vérification Google intégrée en bonus).
+- `google56dafede4fb022c2.html` : Fichier officiel de vérification Google Search Console.
+- `Dockerfile` : Configuration Docker mise à jour pour copier les deux fichiers HTML.
+- `render.yaml` : Configuration automatique pour Render Static Site.
 
-*(Note : Le fichier `Dockerfile` est également inclus si tu utilises un service Docker / Web Service sur Render).*
+## Installation :
+1. Supprime tous les anciens fichiers de ton dépôt GitHub (`Index.htm`, dossiers en trop, etc.).
+2. Décompresse ce ZIP et mets les 5 fichiers directement à la racine de ton dépôt GitHub.
+3. Attends 2 minutes que Render déploie la mise à jour.
+4. Retourne sur Google Search Console et clique sur **Valider**.
