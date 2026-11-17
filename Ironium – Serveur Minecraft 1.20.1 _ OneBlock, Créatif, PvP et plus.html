@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Ironium, serveur Minecraft Java 1.20.1 ouvert 24h/24 : OneBlock survie, créatif, farmland, monde minage et PvP.">
+<meta property="og:title" content="Ironium – Serveur Minecraft 1.20.1">
+<meta property="og:description" content="Cinq mondes : OneBlock survie, créatif, farmland, minage et PvP. Ouvert 24h/24.">
+<meta property="og:type" content="website">
+<title>Ironium – Serveur Minecraft 1.20.1 : OneBlock, Créatif, PvP et plus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=Press+Start+2P&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --dirt:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAy0lEQVR4nGWSMa6CMQyDcx02ZjbEhlhZETvvAlyAI3BeXH3oe9aPVFWtE7tOmnleD7fj7nU/Pc777O+/iyshEPFkDpdkb5gsEMgwJxAXBHKGDOizMAMOUPZAzWlEQg6jPHkJ/KrCCb4IlkU2Cz6plM55Fc0LCLMjRtintgR7BaoNneBzEbRBQN9KYsnaxpZbCdWTZMdUGWwY0AN8JAS3/6B19Pxjrt/R6CYQ7uYgrNX1Qg8PrrrRVmxJ08I9ahbaI/P/005Oz1U3xyI/F7sIyAnotD8AAAAASUVORK5CYII=");--stone:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAwElEQVR4nG2SOxLDIAxEdV731O45AOfNhoffyJNswYC+uxJ1P5hzjjHmxlor95yxc782ci/cPHI3ORZOXOTnrLGRIMrzXBvU+t8BJjF1H3fslijcFuNpN4IIIKbWG/ioLStUQbtQqRUmDkdVsaREziKuO37RA8p5w4G+ZnZKiCmnjob+RAnJrqgw9RGh1a27WYRVLzAewFC2GI9oQl1+X6ICLPHV4BB1gP5lCDgJUrSv43IMjuQsju72kRVwZUj9ALDngow8bifbAAAAAElFTkSuQmCC");--plank:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAlElEQVR4nJWRsQ2AMAwEPRFL0FFmEmipmYCaARgTR0bH41SWrCh2/mP739Y2lcLuo53b7HHtiweXse7hxZcAgjNwQAFYlDxRKP/FRfsYCUz42jM6+GnMDSJSmugXnaBb6niqgU5lZVnLBG2qKqknRPeBdVkj6Zt8tPQwCq+u/VRKz6nCaWkMYkR/PqjBurpaCbks6wM2UkJo4ymamQAAAABJRU5ErkJggg==");--grass:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAuElEQVR4nHWSMQ5CQQhE50BWlpa2trb2nsIjeAEv4DHFvJ/nZNWEEGAHGGBzvu9Hrs/j6ba7PA4jY4xLfGwEdyTixhk9ULRQE3gKUEOUB4QhlLbBIYoNKzoTIQ03vvUAFDNB2WZYELo9g4OlqcsKdyFDMICalRFbqX8k9LPa1y3Btbo7b/ddJb1jaXgEb+I8oYzn/LdZu6UpYkjAiBS2w+k36SVN2OcOvf7m0M3flFzI8k/75FYc+wWySSbubigPBgAAAABJRU5ErkJggg==");
+  --text:#f4f4f4;--muted:#b8b8b8;--green:#55ff55;--yellow:#ffff55;
+  --px:"Press Start 2P",ui-monospace,Menlo,Consolas,monospace;
+  --font:"Pixelify Sans",ui-monospace,Menlo,Consolas,monospace;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;color:var(--text);font:400 19px/1.55 var(--font);image-rendering:pixelated;
+  background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.72)),var(--dirt) 0 0/64px;background-attachment:fixed}
+a{color:inherit}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+.sh{text-shadow:2px 2px 0 #3f3f3f}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;padding:18px 0;font-size:17px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:#fff;text-decoration:underline}
+.btn{display:inline-block;font:600 19px/1 var(--font);color:#fff;text-shadow:2px 2px 0 #3f3f3f;text-decoration:none;cursor:pointer;
+  background:var(--stone) 0 0/32px;border:2px solid #000;padding:15px 24px;
+  box-shadow:inset 2px 2px 0 rgba(255,255,255,.5),inset -3px -3px 0 rgba(0,0,0,.5)}
+.btn:hover{border-color:#fff;filter:brightness(1.18)}
+.btn:active{box-shadow:inset 2px 2px 0 rgba(0,0,0,.5),inset -2px -2px 0 rgba(255,255,255,.3)}
+.btn.g{background-color:#7fd14c;background-blend-mode:multiply}
+.btn.d{background-color:#8b96ff;background-blend-mode:multiply}
+
+.hero{text-align:center;padding:30px 0 60px;overflow:hidden}
+.logo{position:relative;display:inline-block;margin:10px 0 56px}
+.logo h1{margin:0;font:400 clamp(32px,9.5vw,88px)/1 var(--px);color:#d9dce1;letter-spacing:2px;
+  text-shadow:1px 1px #5a5e66,2px 2px #5a5e66,3px 3px #5a5e66,4px 4px #4a4d54,5px 5px #4a4d54,6px 6px #3a3d43,7px 7px #000,8px 8px #000,9px 9px #000}
+.splash{position:absolute;right:-4%;bottom:-30px;transform:rotate(-16deg);color:var(--yellow);font:600 clamp(17px,3.4vw,26px)/1 var(--font);text-shadow:2px 2px 0 #3f3f15;white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){.splash{animation:pulse 1.1s ease-in-out infinite alternate}}
+@keyframes pulse{from{transform:rotate(-16deg) scale(.94)}to{transform:rotate(-16deg) scale(1.06)}}
+.tag{max-width:46ch;margin:0 auto 34px;color:#e4e4e4;font-size:21px}
+
+.entry{display:flex;gap:16px;align-items:center;text-align:left;max-width:720px;margin:0 auto 18px;padding:12px;background:rgba(0,0,0,.6);border:2px solid #000;box-shadow:inset 0 0 0 2px rgba(255,255,255,.18)}
+.icon{flex:none;width:64px;height:64px;border:2px solid #000;background:var(--grass) 0 0/32px 32px,var(--dirt) 0 0/32px;background-repeat:no-repeat,repeat;background-size:64px 22px,32px}
+.icon{background:linear-gradient(transparent 0 0),var(--dirt) 0 0/32px}
+.icon::before{content:"";display:block;height:22px;background:var(--grass) 0 0/32px;border-bottom:2px solid rgba(0,0,0,.35)}
+.info{flex:1;min-width:0}
+.sname{font-weight:600;font-size:22px;color:#fff}
+.m1{color:#aaa;font-size:17px;line-height:1.25}.m1 b{color:var(--green);font-weight:600}
+.side{text-align:right;flex:none}
+.pc{color:var(--muted);font-size:18px;margin-bottom:6px}.pc.on{color:var(--green)}
+.ping{display:inline-flex;gap:2px;align-items:flex-end;height:20px}
+.ping i{width:4px;background:var(--green);box-shadow:1px 1px 0 #003300}
+.ping i:nth-child(1){height:6px}.ping i:nth-child(2){height:9px}.ping i:nth-child(3){height:12px}.ping i:nth-child(4){height:16px}.ping i:nth-child(5){height:20px}
+[data-state="offline"] .ping i{background:#ff5555;box-shadow:none}[data-state="offline"] .pc{color:#ff5555}
+.ipline{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:720px;margin:0 auto}
+.field{flex:1 1 300px;background:#000;border:2px solid #a0a0a0;color:#fff;padding:14px 18px;text-align:left;font-size:19px;word-break:break-all;user-select:all;display:flex;align-items:center}
+
+section{padding:26px 0}
+.panel{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),var(--stone) 0 0/32px;border:2px solid #000;
+  box-shadow:inset 2px 2px 0 rgba(255,255,255,.22),inset -2px -2px 0 rgba(0,0,0,.4);padding:28px}
+h2{font:600 30px/1.2 var(--font);margin:0 0 6px;color:#fff;text-shadow:3px 3px 0 #3f3f3f}
+.sub{color:var(--muted);margin:0 0 24px;max-width:52ch}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.slot{background:rgba(0,0,0,.45);border:2px solid #000;box-shadow:inset 2px 2px 0 rgba(0,0,0,.5),inset -2px -2px 0 rgba(255,255,255,.18);padding:18px}
+.slot h3{margin:0 0 6px;font:600 20px/1.2 var(--font);color:var(--yellow);text-shadow:2px 2px 0 #3f3f15}
+.slot p{margin:0;color:#e0e0e0;font-size:18px;line-height:1.4}
+ol.rules{margin:0;padding:0;list-style:none;counter-reset:r;display:grid;grid-template-columns:1fr 1fr;gap:12px 22px}
+ol.rules li{counter-increment:r;display:flex;gap:14px;align-items:flex-start}
+ol.rules li::before{content:counter(r);flex:none;width:34px;height:34px;display:grid;place-items:center;background:var(--stone) 0 0/32px;border:2px solid #000;
+  box-shadow:inset 2px 2px 0 rgba(255,255,255,.5),inset -2px -2px 0 rgba(0,0,0,.5);font-weight:600;color:#fff;text-shadow:2px 2px 0 #3f3f3f}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.shot{background:var(--plank) 0 0/32px;border:2px solid #000;padding:9px;box-shadow:inset 2px 2px 0 rgba(255,255,255,.3),inset -2px -2px 0 rgba(0,0,0,.4),4px 4px 0 rgba(0,0,0,.4)}
+.shot div{aspect-ratio:16/10;border:2px solid #000;display:flex;align-items:flex-end;padding:8px;background:linear-gradient(#78a7ff 0 55%,#5d9b3a 55% 66%,#866043 66%)}
+.shot:first-child{grid-column:span 2;grid-row:span 2}.shot:first-child div{aspect-ratio:auto;height:100%;min-height:230px}
+.shot:nth-child(3) div{background:linear-gradient(#1b1235 0 50%,#4b4f57 50%)}
+.shot:nth-child(5) div{background:linear-gradient(#e8a45a 0 45%,#7a4a2a 45%)}
+.shot span{background:rgba(0,0,0,.65);color:#fff;font-size:16px;padding:2px 8px}
+.join{text-align:center}.join .sub{margin-left:auto;margin-right:auto}
+footer{text-align:center;padding:26px 0 44px;color:var(--muted);font-size:15px}
+@media (max-width:760px){.three,ol.rules{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.splash{right:-2%}.entry{flex-wrap:wrap}.side{text-align:left;width:100%;display:flex;align-items:center;gap:14px}.pc{margin:0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{overflow-x:hidden}
+.hero{overflow:visible;position:relative;padding-bottom:96px}
+.pano{position:absolute;z-index:-1;left:50%;margin-left:-50vw;width:100vw;top:-76px;bottom:0;background:linear-gradient(#ffffff2e,#ffffff2e) 12% 150px/170px 26px no-repeat,linear-gradient(#ffffff2e,#ffffff2e) 15% 124px/100px 26px no-repeat,linear-gradient(#ffffff26,#ffffff26) 78% 250px/200px 26px no-repeat,linear-gradient(#ffffff26,#ffffff26) 82% 224px/110px 26px no-repeat,radial-gradient(2px 2px at 9% 7%,#fff 98%,transparent),radial-gradient(2px 2px at 33% 12%,#dfe8ff 98%,transparent),radial-gradient(3px 3px at 61% 6%,#fff 98%,transparent),radial-gradient(2px 2px at 88% 14%,#dfe8ff 98%,transparent),linear-gradient(#0c1530,#25427a 52%,#e29a5c)}
+.pano::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.18)}
+.hills{position:absolute;left:0;right:0;bottom:48px;height:170px;z-index:1}
+.hills::before,.hills::after{content:"";position:absolute;left:0;right:0;bottom:0}
+.hills::before{height:170px;background:#1a3a45;clip-path:polygon(0 100%,0 60%,7% 60%,7% 42%,16% 42%,16% 28%,27% 28%,27% 48%,38% 48%,38% 34%,50% 34%,50% 54%,63% 54%,63% 24%,75% 24%,75% 44%,88% 44%,88% 58%,100% 58%,100% 100%)}
+.hills::after{height:96px;background:#1d5232;clip-path:polygon(0 100%,0 70%,10% 70%,10% 52%,22% 52%,22% 74%,36% 74%,36% 58%,48% 58%,48% 80%,60% 80%,60% 60%,72% 60%,72% 76%,85% 76%,85% 56%,100% 56%,100% 100%)}
+.ground{position:absolute;left:0;right:0;bottom:0;height:48px;z-index:2;background:var(--dirt) 0 0/32px;border-top:2px solid #000}
+.ground::before{content:"";display:block;height:16px;background:var(--grass) 0 0/32px;box-shadow:0 3px 0 rgba(0,0,0,.35)}
+.stage{height:150px;perspective:700px;display:grid;place-items:center;margin:-34px 0 18px}
+.cube{width:80px;height:80px;position:relative;transform-style:preserve-3d;transform:rotateX(-24deg) rotateY(38deg)}
+@media (prefers-reduced-motion:no-preference){.cube{animation:spinc 18s linear infinite}}
+@keyframes spinc{to{transform:rotateX(-24deg) rotateY(398deg)}}
+.cf{position:absolute;inset:0;background:var(--dirt) 0 0/20px}
+.cf.s::before{content:"";position:absolute;left:0;right:0;top:0;height:20px;background:var(--grass) 0 0/20px}
+.cf.t{background:var(--grass) 0 0/20px}
+.f1{transform:translateZ(40px)}.f2{transform:rotateY(90deg) translateZ(40px);box-shadow:inset 0 0 0 100px rgba(0,0,0,.25)}
+.f3{transform:rotateY(180deg) translateZ(40px);box-shadow:inset 0 0 0 100px rgba(0,0,0,.12)}.f4{transform:rotateY(-90deg) translateZ(40px);box-shadow:inset 0 0 0 100px rgba(0,0,0,.34)}
+.f5{transform:rotateX(90deg) translateZ(40px)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.steps .slot{counter-increment:s}
+.steps .slot::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;margin-bottom:12px;background:var(--stone) 0 0/32px;border:2px solid #000;box-shadow:inset 2px 2px 0 rgba(255,255,255,.5),inset -2px -2px 0 rgba(0,0,0,.5);font-weight:600;color:#fff;text-shadow:2px 2px 0 #3f3f3f}
+@media (max-width:760px){.steps{grid-template-columns:1fr}.stage{height:130px}}
+.worlds{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.worlds .slot{grid-column:span 2;border-left:6px solid var(--c,#777)}
+.worlds .slot:nth-child(n+4){grid-column:span 3}
+.worlds .slot h3{color:#fff;text-shadow:2px 2px 0 #3f3f3f;font-size:22px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media (max-width:760px){.worlds,.two{grid-template-columns:1fr}.worlds .slot,.worlds .slot:nth-child(n+4){grid-column:auto}}
+:root{--body:Rubik,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{font:400 17px/1.6 var(--body)}
+nav,.sname,.field,.pc{font-family:var(--font)}
+nav{font-size:18px}
+.m1{font-size:16px}
+.slot p{font-size:16px;line-height:1.5}
+.sub{font-size:17px}
+.tag{font-size:19px;font-weight:500;text-shadow:1px 1px 0 rgba(0,0,0,.75)}
+.shot span{font-family:var(--body);font-size:14px}
+ol.rules li::before,.steps .slot::before{font-family:var(--font)}
+footer{font-size:14px}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:6px 26px;padding:8px max(16px,calc((100% - 860px)/2));overflow-x:auto;scrollbar-width:none;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),var(--stone) 0 0/32px;border-bottom:2px solid #000;box-shadow:inset 0 2px 0 rgba(255,255,255,.18)}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;white-space:nowrap;padding:6px 0}
+nav .mini{margin-left:auto;flex:none;font-size:15px;padding:9px 14px;white-space:nowrap}
+body::before{content:"";position:fixed;left:0;right:0;top:0;height:env(safe-area-inset-top,0px);background:#1b1b1b;z-index:11}
+.pano{top:0}
+.tag,.sub{text-wrap:balance}
+.worlds .slot:hover{border-color:#fff}
+
+:root{--t-gs:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA50lEQVR4nHWSMY4CQQwE/SACREjIZUAIIdKFJ8EHSAgJCUn4AL9c1CPVqs4SQWOvp93t8VCHx2r6e2+m02s9Yr6T726LgeQBPOpBapUfChCoJSKIAaKclUk0QbazJ/RkxaEdmAbx7vxP4P77Mz0v+ymRg04Orsf1QGrkES6aE4Mc5Pu8XQ54iUHOLDIEQnQTogBy58wCSYhBCOQGU/raZScamYoG6p5mFrCbhfpOaOYK1Ku7uoEaO3Ido/rW1B3d6Fh+Qrv06/ha5hckKzORl+gn9MtUX5gd+/OaMwt4gf05+xT+L1D7AGuwG8jDvAmPAAAAAElFTkSuQmCC");--t-farm:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnElEQVR4nK2SMQ6AMAwD8wpWBhbEC5hg5QmsfID/b6AgpTKnlKUMUVNkXNuJ7XN/eZ3bVMrvxzq8TsUp3hzgTZzRxw9KpNjoTRkVSEKSBt6Wsbtaqiigv0yBYgNnlF8LrmbHsmBIpoqYUXsG9K8S+Y1KHgvZ6NhrDnzANHVNnsqyKf23B7VJ0B43sawyR0eZNWufGejLGhpJmzO4AdOUssyOUB+mAAAAAElFTkSuQmCC");--t-ore:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA10lEQVR4nHWTsQ3DMAwEOa97A+ncuw2QNbJB5sg2Dl7ACWdCKQjKNPl88qU6z/OK7fu+tOM4hk9Oztu2zXhi5Y/8JMHAxMkBbAAQdCIAsMj5+35en9djAlBXFMaTRDGUsfyPZ6xYmR4Jpm8mnv82Qk90B1jgmZ+c8nbpvEpeLXUArCQi5oX25d6WyEeXk+5mYQYDwJqaQRYa63L2u1CWzN1jSNpzvODq2zYjF5oZYwwA5ku3mGlbFTwA1C13YPlWo8F0yvhP877A/mbma/TF8BlAq+NbGIAfdkV19H91t7gAAAAASUVORK5CYII=");--t-dia:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArElEQVR4nKVSuQ2AQAxjIVZhCKZgkhuHipaWkoqODWhARsrJcXI0FObJ4zhP15dy/0GHx7DML8Z9c2/GdB4V8AOVAEZLBDhIfVzAKUDgel+uCleFT4s4BcZqJNyGqYCPlVQClctKMrKgQAfGgWyzfyvkFLCDB2ffStBUoBvICMIaswRNzOAUwGBT1sraUmhB15j1m7X4ecoMTuJ5hRZa22iRp0PMhqlHFe7gDx53QeV97yz91gAAAABJRU5ErkJggg==");--t-tnt:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjElEQVR4nKVTQQ7AIAjre3Y0WbIH7PH+YRd/4uISjFRg2Tw0IGIpirjOvUbIx6Z8BsThJM/nNZiRq7Ia3oMnMWrBVWBV8dSJRc65llIUvsSwcrjZTpBS6pA1W8FIiJFRki1CibEa/JGtCJYvMXrnt1FWg+QNkTV9E0GE6CM9BNbP85KtFqcWrL49+c3eCKShZ51CVXUAAAAASUVORK5CYII=")}
+.hero{padding-bottom:150px}
+.creeper{position:absolute;z-index:3;bottom:48px;left:7%;width:48px;height:120px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUCAYAAACwG3xrAAAArElEQVR4nGWRwQ3DMAwDNYMHyLPIo+8OkAEyQJENukSn6AwdIds5oIATaOch2KYokZLjc+59/7369n32479VCNcZSgKKBBE8BLRHywD0dzggssAbQRdpkgBTQUp40quzw6xL1BS4B8QD0wQzEz5qEgB9QfhKk2gB4qkkGBHXSAwEAP+XQYIN0p77sAdITAOxNjkbJMINre8lY/huTOl0Qi0KpiQgeFH4mr0D0heatUTODt79FwAAAABJRU5ErkJggg==") 0 0/100% 100%}
+.torch{position:absolute;z-index:3;bottom:48px;width:64px;height:64px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAATklEQVR4nGNgGAXDHfx/nfKfIs2UGPD/hM1/ECZP8yqN/8iYZP3TlP8jY5Id8DpP7j8yprd+MGhLcP6f52NAdhRQqn/UAaMOGHXAyHAAAOEqgurjIpuYAAAAAElFTkSuQmCC") 0 0/200% 100%}
+.torch::before{content:"";position:absolute;inset:-46px;background:radial-gradient(circle,rgba(255,170,60,.38),transparent 62%);z-index:-1}
+.torch.a{left:calc(7% + 96px)}.torch.b{right:7%}
+@media (prefers-reduced-motion:no-preference){.torch{animation:flick .55s steps(1) infinite}}
+@keyframes flick{0%{background-position:0 0}50%{background-position:100% 0}100%{background-position:0 0}}
+@media (max-width:760px){.creeper{width:32px;height:80px;left:3%}.torch.a{display:none}.torch.b{width:44px;height:44px;right:5%}}
+.worlds .slot{display:grid;grid-template-columns:60px 1fr;column-gap:16px;row-gap:2px;align-items:center}
+.ico{grid-row:span 2;width:60px;height:60px;border:2px solid #000;background:var(--i) 0 0/100% 100%;box-shadow:inset 2px 2px 0 rgba(255,255,255,.25),inset -2px -2px 0 rgba(0,0,0,.35)}
+.worlds .slot h3{margin:0;align-self:end}.worlds .slot p{align-self:start}
+.toast{position:fixed;z-index:20;right:12px;top:calc(env(safe-area-inset-top,0px) + 70px);display:flex;gap:12px;align-items:center;max-width:min(340px,calc(100vw - 24px));padding:10px 14px 10px 10px;background:#1d1d1d;border:2px solid #000;box-shadow:inset 0 0 0 2px #5b5b5b,6px 6px 0 rgba(0,0,0,.4);transform:translateX(130%);transition:transform .45s cubic-bezier(.2,.9,.3,1)}
+.toast.show{transform:none}
+.toast .ti{flex:none;width:44px;height:44px;border:2px solid #000;background:var(--t-gs) 0 0/100% 100%}
+.toast b{display:block;color:var(--yellow);font:600 17px/1.2 var(--font);text-shadow:2px 2px 0 #3f3f15}
+.toast span{display:block;color:#fff;font:400 15px/1.3 var(--body)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+footer .xpnum{color:#80ff20;font:600 22px/1 var(--font);text-shadow:2px 0 #000,-2px 0 #000,0 2px #000,0 -2px #000;margin-bottom:6px}
+.xp{width:min(360px,80%);height:12px;margin:0 auto 22px;background:#1b1b1b;border:2px solid #000;box-shadow:inset 0 0 0 2px #4a4a4a}
+.xp i{display:block;height:100%;width:72%;background:#80ff20;box-shadow:inset 0 3px 0 rgba(255,255,255,.4)}
+.hotbar{display:inline-flex;gap:0;padding:4px;background:rgba(0,0,0,.6);border:2px solid #000;box-shadow:inset 0 0 0 2px #8b8b8b;margin-bottom:20px}
+.hotbar span{width:52px;height:52px;margin:0;border:2px solid #373737;background:rgba(139,139,139,.25);display:grid;place-items:center}
+.hotbar span::before{content:"";width:34px;height:34px;background:var(--i) 0 0/100% 100%;box-shadow:2px 2px 0 rgba(0,0,0,.45)}
+@media (max-width:420px){.hotbar span{width:44px;height:44px}.hotbar span::before{width:28px;height:28px}}
+</style>
+</head>
+<body>
+<nav class="sh"><a href="#serveur">Les mondes</a><a href="#rejoindre">Rejoindre</a><a href="#regles">Règles</a><a href="#galerie">Galerie</a><a href="#discord">Discord</a><button type="button" class="btn g mini" id="copy2">Copier l’IP</button></nav>
+
+<div class="wrap">
+<header class="hero">
+  <div class="pano" aria-hidden="true"><div class="hills"></div><div class="ground"></div><div class="creeper"></div><div class="torch a"></div><div class="torch b"></div></div>
+  <div class="logo"><h1>IRONIUM</h1><div class="splash">Ouvert 24h/24 !</div></div>
+  <div class="stage" aria-hidden="true"><div class="cube"><div class="cf s f1"></div><div class="cf s f2"></div><div class="cf s f3"></div><div class="cf s f4"></div><div class="cf t f5"></div></div></div>
+  <p class="tag sh">Cinq mondes en 1.20.1 : OneBlock survie, créatif, farmland, minage et PvP. Choisis le tien.</p>
+
+  <div class="entry" id="entry" data-state="online" aria-live="polite">
+    <div class="icon" aria-hidden="true"></div>
+    <div class="info">
+      <div class="sname sh">Ironium</div>
+      <div class="m1">OneBlock · Créatif · PvP et plus · <b>ouvert 24h/24</b></div>
+      <div class="m1">Java Edition <span id="version">1.20.1</span></div>
+    </div>
+    <div class="side"><div class="pc on" id="pc">En ligne</div><div class="ping" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+
+  <div class="ipline">
+    <div class="field" id="ip">domination-polarized.tun.ply.gg</div>
+    <button type="button" class="btn g" id="copy">Copier l’IP</button>
+  </div>
+</header>
+</div>
+
+<main class="wrap">
+<section id="serveur"><div class="panel">
+  <h2>Cinq mondes, un serveur</h2>
+  <p class="sub">Choisis ton monde : survivre sur un seul bloc, construire, farmer, miner ou te battre.</p>
+  <div class="worlds">
+    <div class="slot" style="--c:#55ff55"><div class="ico" style="--i:var(--t-gs)"></div><h3>OneBlock survie</h3><p>Pars d’un seul bloc et agrandis ton île.</p></div>
+    <div class="slot" style="--c:#55ffff"><div class="ico" style="--i:var(--t-dia)"></div><h3>Créatif</h3><p>Construis librement, sans limite.</p></div>
+    <div class="slot" style="--c:#c8a35a"><div class="ico" style="--i:var(--t-farm)"></div><h3>Farmland</h3><p>Un monde pour tes fermes et tes cultures.</p></div>
+    <div class="slot" style="--c:#aaaaaa"><div class="ico" style="--i:var(--t-ore)"></div><h3>Monde minage</h3><p>Un monde dédié au minage.</p></div>
+    <div class="slot" style="--c:#ff5555"><div class="ico" style="--i:var(--t-tnt)"></div><h3>PvP</h3><p>Affronte les autres joueurs.</p></div>
+  </div>
+  <div class="two">
+    <div class="slot"><h3>Plugins</h3><p>Protection des îles et téléportation.</p></div>
+    <div class="slot"><h3>Version</h3><p>Java Edition <span id="version2">1.20.1</span>, ouvert 24h/24.</p></div>
+  </div>
+</div></section>
+
+<section id="rejoindre"><div class="panel">
+  <h2>Comment rejoindre</h2>
+  <p class="sub">Trois étapes dans Minecraft Java Edition 1.20.1.</p>
+  <div class="steps">
+    <div class="slot"><h3>Ouvre Multijoueur</h3><p>Lance Minecraft en 1.20.1 puis clique sur « Multijoueur ».</p></div>
+    <div class="slot"><h3>Ajoute le serveur</h3><p>Clique sur « Ajouter un serveur » et écris le nom Ironium.</p></div>
+    <div class="slot"><h3>Colle l’adresse</h3><p>Colle l’IP copiée plus haut, clique sur « Terminé » puis rejoins Ironium.</p></div>
+  </div>
+</div></section>
+
+<section id="regles"><div class="panel">
+  <h2>Règles</h2>
+  <p class="sub">Elles s’appliquent à tous les joueurs. Le staff peut sanctionner en cas de non-respect.</p>
+  <ol class="rules">
+    <li>Respecte les autres joueurs et le staff.</li>
+    <li>Pas de triche ni de logiciels interdits (X-ray, fly, auto-clic).</li>
+    <li>Ne détruis pas les constructions des autres joueurs.</li>
+    <li>Pas de publicité pour d’autres serveurs.</li>
+    <li>Pas d’insultes ni de harcèlement dans le chat.</li>
+    <li>En cas de doute, demande au staff.</li>
+  </ol>
+</div></section>
+
+<section id="galerie"><div class="panel">
+  <h2>Galerie</h2>
+  <p class="sub">Les îles et les moments forts d’Ironium.</p>
+  <div class="gallery">
+    <div class="shot"><div><span>Île OneBlock</span></div></div>
+    <div class="shot"><div><span>Screenshot 2</span></div></div>
+    <div class="shot"><div><span>Screenshot 3</span></div></div>
+    <div class="shot"><div><span>Screenshot 4</span></div></div>
+    <div class="shot"><div><span>Screenshot 5</span></div></div>
+  </div>
+</div></section>
+
+<section id="discord"><div class="panel join">
+  <h2>Rejoins le Discord</h2>
+  <p class="sub">Pose tes questions, trouve des joueurs et suis les annonces du serveur.</p>
+  <a class="btn d" href="https://discord.gg/" target="_blank" rel="noopener">Ouvrir le Discord</a>
+</div></section>
+</main>
+
+<footer>
+  <div class="xpnum">1.20.1</div>
+  <div class="xp" aria-hidden="true"><i></i></div>
+  <div class="hotbar" aria-hidden="true"><span style="--i:var(--t-gs)"></span><span style="--i:var(--t-dia)"></span><span style="--i:var(--t-farm)"></span><span style="--i:var(--t-ore)"></span><span style="--i:var(--t-tnt)"></span></div>
+  <div>Ironium · Java 1.20.1<br>Site non officiel, non affilié à Mojang ni à Microsoft.</div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"><div class="ti" aria-hidden="true"></div><div><b>Succès débloqué !</b><span>IP copiée : prêt à jouer sur Ironium</span></div></div>
+
+<script>
+var CONFIG={ip:"domination-polarized.tun.ply.gg"};
+(function(){
+  var ipEl=document.getElementById("ip"),btn=document.getElementById("copy"),timer;
+  function msg(t){btn.textContent=t;clearTimeout(timer);timer=setTimeout(function(){btn.textContent="Copier l’IP"},2200)}
+  btn.addEventListener("click",function(){
+    function fb(){try{var r=document.createRange();r.selectNodeContents(ipEl);var s=getSelection();s.removeAllRanges();s.addRange(r);msg(document.execCommand("copy")?"IP copiée !":"Copie manuelle")}catch(e){msg("Copie manuelle")}}
+    try{navigator.clipboard.writeText(CONFIG.ip).then(function(){msg("IP copiée !")},fb)}catch(e){fb()}
+  });
+  var toast=document.getElementById("toast"),tt;
+  btn.addEventListener("click",function(){toast.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove("show")},3200)});
+  var S=["Ouvert 24h/24 !","Cinq mondes !","Prêt pour le PvP ?","Crafte ta légende !","Attention aux creepers !","Un bloc, une île !","Rejoins-nous !"];
+  document.querySelector(".splash").textContent=S[Math.floor(Math.random()*S.length)];
+  var c2=document.getElementById("copy2");
+  c2.addEventListener("click",function(){btn.click();c2.textContent="IP copiée !";setTimeout(function(){c2.textContent="Copier l’IP"},2200)});
+  /* Statut en direct : actif quand la page est sur ton propre hébergement.
+     Ici la requête est bloquée : la page reste sur « En ligne, ouvert 24h/24 ». */
+  var ctl=new AbortController(),to=setTimeout(function(){ctl.abort()},6000);
+  fetch("https://api.mcsrvstat.us/3/"+encodeURIComponent(CONFIG.ip),{signal:ctl.signal})
+    .then(function(r){return r.json()})
+    .then(function(d){
+      clearTimeout(to);
+      var pc=document.getElementById("pc");
+      if(!d||!d.online){document.getElementById("entry").dataset.state="offline";pc.className="pc";pc.textContent="Hors ligne";return}
+      var on=d.players&&d.players.online||0,max=d.players&&d.players.max||0;
+      pc.textContent=on+"/"+max;
+      if(d.version){document.getElementById("version").textContent=d.version;document.getElementById("version2").textContent=d.version}
+    })
+    .catch(function(){clearTimeout(to)});
+})();
+</script>
+</body>
+</html>
