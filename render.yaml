@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ironium-site
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./
